@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right,#e555e0,#499920);
+}
+
+.card {
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+.percentage-container {
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #444;
+    text-decoration: double;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: calc(100% - 20px);
+    height: 30px;
+    margin-top: 10px;
+    appearance:none;
+    border: 1px solid hotpink;
+    border-radius: 14px;
+    background: linear-gradient(to right, #e0e0e0, #4caf50);
+    outline: none;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+input::-webkit-slider-thumb{
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    border: 1px solid hotpink;
+    border-radius: 50%;
+    background-color: #999f50;
+    cursor: pointer;
+}
+
+#percentageValue {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+button {
+    background-color: #402eda;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

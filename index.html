@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Percentage Calculator</h1>
+        <div class="percentage-container">
+            <label for="percentageSlider" id="percentageLabelSlider">Select Percentage:</label>
+            <input type="range" id="percentageSlider" min="0" max="100" value="10" step="1">
+            <span id="percentageValue">10%</span>
+        </div>
+
+        <div>
+            <input type="number" id="baseNumber" placeholder="Enter the number">
+        </div>
+        <button onclick="calculatePercentage()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
